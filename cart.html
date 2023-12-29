@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title> All Product-TechStore </title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="web.html"><img src="Images/techstore logo.png" width="180px"></a>
+            </div>
+            <nav class="white">
+                <ul id="menuitems">
+                    <li><a href="web.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="web.html#about">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping" width="30px" width></i></a>
+            <img src="Images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+    
+    <!-- cart items details -->
+
+    <div class="cart-container cart-page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Sub-Total</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="Images/Logitech G305.png">
+                        <div>
+                            <p>Logitech G305 Mouse</p>
+                            <small>Price: 1,749 LE</small><br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1" min="1"></td>
+                <td>1,749 LE</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="Images/Cougaregy T29 0.png">
+                        <div>
+                            <p>T-29 wired controller</p>
+                            <small>Price: 599 LE</small><br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1" min="1"></td>
+                <td>599 LE</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="Images/HP Victus 16 0.png">
+                        <div>
+                            <p>HP Victus 16-R0044NE</p>
+                            <small>Price: 57,499 LE</small><br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1" min="1"></td>
+                <td>57,499 LE</td>
+            </tr>
+        </table>
+        
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Sub-Total</td>
+                    <td>59,847 LE</td>
+                </tr>
+                <tr>
+                    <td>Tax 14%</td>
+                    <td>8,379 LE</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>68,226 LE</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+    <!-- Js for toggle menu-->
+    <script>
+        var menuitems = document.getElementById("menuitems");
+
+        menuitems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(menuitems.style.maxHeight == "0px")
+                {
+                    menuitems.style.maxHeight ="200px";
+                }
+            else
+                {
+                    menuitems.style.maxHeight = "0px";
+                }
+        }
+    </script>
+</body>
+</html>

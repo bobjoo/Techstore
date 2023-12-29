@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title> All Product-TechStore </title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="web.html"><img src="Images/techstore logo.png" width="180px"></a>
+            </div>
+            <nav class="white">
+                <ul id="menuitems">
+                    <li><a href="web.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="web.html#about">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping" width="30px" width></i></a>
+            <img src="Images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+    
+    <!-- account detials -->
+
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col7">
+                    <img src="Images/account register welcome.png">
+                </div>
+                <div class="col2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="Indicator">
+                        </div>
+                        <form id="loginform">
+                            <input type="text" placeholder="Username" required>
+                            <input type="password" placeholder="password" required>
+                            <button class="btn" type="submit">Login</button>
+                            <a href="comingsoon.html">Forget Password</a>
+                        </form>
+                        <form id="Regform">
+                            <input type="text" placeholder="Username" required>
+                            <input type="email" placeholder="E-mail" required>
+                            <input type="password" placeholder="password" required>
+                            <button class="btn" type="submit">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+    <!-- Js for toggle menu-->
+
+    <script>
+        var menuitems = document.getElementById("menuitems");
+
+        menuitems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(menuitems.style.maxHeight == "0px")
+                {
+                    menuitems.style.maxHeight ="200px";
+                }
+            else
+                {
+                    menuitems.style.maxHeight = "0px";
+                }
+        }
+    </script>
+
+    <!-- js for toggle form -->
+
+    <script>
+
+        var loginform = document.getElementById("loginform");
+        var Regform = document.getElementById("Regform");
+        var Indicator = document.getElementById("Indicator");
+
+        function register(){
+            Regform.style.transform ="translatex(0px)";
+            loginform.style.transform = "translatex(0px)";
+            Indicator.style.transform = "translatex(100px)";
+        }
+
+        function login(){
+            Regform.style.transform ="translatex(300px)";
+            loginform.style.transform = "translatex(300px)";
+            Indicator.style.transform = "translatex(0px)";
+        }
+
+
+    </script>
+
+
+</body>
+</html>

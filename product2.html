@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title> All Product-TechStore </title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="web.html"><img src="Images/techstore logo.png" width="180px"></a>
+            </div>
+            <nav class="white">
+                <ul id="menuitems">
+                    <li><a href="web.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="web.html#about">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping" width="30px" width></i></a>
+            <img src="Images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+    
+    <div class="mini-container">
+        <div class="row row2">
+            <h2>All Products</h2>
+            <select>
+                <option>Default Sorting</option>
+                <option>Sort by price</option>
+                <option>Sort by popularity</option>
+                <option>Sort by rating</option>
+            </select>
+        </div>
+        <h2 class="title1">Console Products</h2>
+        <div class="row">
+            <div class="col4">
+                <a href="ps5.html"><img src="Images/ps5.png" style="margin-bottom:120px;"></a>
+                <h4>Sony PlayStation 5</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p> 26,199 LE </p>
+            </div>
+            <div class="col4">
+                <a href="ps5 conttroller.html"><img src="Images/PS5 controller.png"></a>
+                <h4>Sony PS5 Wireless Controller</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p> 3,439 LE </p>
+            </div>
+            <div class="col4">
+                <a href="Cougaregy T-29.html"><img src="Images/T-29 controller.png"></a>
+                <h4>T-29 wired controller</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p> 599 LE </p>
+            </div>
+        </div>
+        <h2 class="title1">Smart Watches</h2>
+        <div class="row">
+            <div class="col4">
+                <a href="Smart Band 5.html"><img src="Images/mi smart band 5 0.png"></a>
+                <h4>Smart Band 5</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p> 2,050 LE </p>
+            </div>
+            <div class="col4">
+                <a href="Xiaomi Redmi Smart Watch 3.html"><img src="Images/Xiaomi Redmi Smart Watch 3 (1).png"></a>
+                <h4>Xiaomi Redmi Smart Watch 3</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p> 4,150 LE </p>
+            </div>
+            <div class="col4">
+                <a href="Xiaomi Band 7 Pro.html"><img src="Images/Xiaomi Band 7 Pro (1).png" style="margin-bottom: 10px;"></a>
+                <h4>Xiaomi Band 7 Pro </h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p> 2,700 LE </p>
+            </div>
+        </div>
+        <h2 class="title1">More product Coming Soon</h2>
+        <div class="page-btn">
+            <a href="product.html"><span><i class="fa-solid fa-arrow-left"></i></span></a>
+            <a href="product.html"><span>1</span></a>
+            <a href="product2.html"><span>2</span></a>
+        </div>
+    </div>
+   
+    <!-- Footer page-->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3><b>Download our App</b></h3>
+                    <p><b>Download App for Android and Ios moblie phone</b></p>
+                    <div class="app-logo">
+                        <a href="comingsoon.html"> <img src="Images/play-store.png"> </a>
+                        <a href="comingsoon.html"> <img src="Images/app-store.png">  </a>
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <a href="#header"><img src="Images/techstore logo.png" width="150px"></a>
+                    <p><b>We are committed to achieving worldwide accessibility for our products, aiming to reach customers across the world</b></p>
+                </div>
+                <div class="footer-col-3">
+                    <h3><b>Useful Links</b></h3>
+                    <ul>
+                        <li><a href="comingsoon.html"><b>Coupons</b></a></li>
+                        <li><a href="comingsoon.html"><b>Blog Post</b></a></li>
+                        <li><a href="comingsoon.html"><b>Return Policy</b></a></li>
+                        <li><a href="comingsoon.html"><b>Join Affiliate</b></a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3><b>Follow Us</b></h3>
+                    <ul>
+                        <li><a href="comingsoon.html"> <b> Youtube </b> <i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="comingsoon.html"> <b> Facebook </b> <i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="comingsoon.html"> <b> X-Twitter </b> <i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="comingsoon.html"> <b> Instagram </b> <i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright"> Copyright 2023 <i class="fa-regular fa-copyright"></i> </p>
+        </div>
+    </div>
+
+    <!-- Js for toggle menu-->
+    <script>
+        var menuitems = document.getElementById("menuitems");
+
+        menuitems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(menuitems.style.maxHeight == "0px")
+                {
+                    menuitems.style.maxHeight ="200px";
+                }
+            else
+                {
+                    menuitems.style.maxHeight = "0px";
+                }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title> Contact Page </title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="web.html"><img src="Images/techstore logo.png" width="180px"></a>
+            </div>
+            <nav class="white">
+                <ul id="menuitems">
+                    <li><a href="web.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="web.html#about">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping" width="30px" width></i></a>
+            <img src="Images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="contact-content">
+            <h2>Contact Us</h2><br>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="cbox">
+                    <div class="cicon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="ctext">
+                        <h3>Address</h3>
+                        <p> El-Gondoul Bldg. 14, 26th July St.</p>
+                    </div>
+                </div>
+                <div class="cbox">
+                    <div class="cicon"><i class="fa-solid fa-phone"></i></div>
+                    <div class="ctext">
+                        <h3>Phone</h3>
+                        <p>01* *** *** **</p>
+                    </div>
+                </div>
+                <div class="cbox">
+                    <div class="cicon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="ctext">
+                        <h3>E-mail</h3>
+                        <p>techstore@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactform">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="inputbox">
+                        <input type="text" name="" required>
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name="" required>
+                        <span>E-mail</span>
+                    </div>
+                    <div class="inputbox">
+                        <textarea required="required"></textarea>
+                        <span>Type your Message...</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="submit" name="" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var menuitems = document.getElementById("menuitems");
+
+        menuitems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(menuitems.style.maxHeight == "0px")
+                {
+                    menuitems.style.maxHeight ="200px";
+                }
+            else
+                {
+                    menuitems.style.maxHeight = "0px";
+                }
+        }
+    </script>
+</body>
+</html>

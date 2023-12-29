@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title> TechStore </title>
+</head>
+<body>
+
+    <div class="header" id="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="web.html"><img src="Images/techstore logo.png" width="180px"></a>
+                </div>
+                <nav>
+                    <ul id="menuitems">
+                        <li><a href="web.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><i class="fa-solid fa-bag-shopping" width="30px" width></i></a>
+                <img src="Images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <h1> Your Ultimate Destination <br>for Laptops & Accessories!  </h1>
+                    <p>
+                        Discover a world of cutting-edge technology at TechStore!<br> Explore a curated collection of premium accessories, powerful laptops, and more. 
+                    </p>
+                    <a href="product.html" class="btn"> Explore Now </i> </a>
+                </div>
+                <div class="col2">
+                    <img src="Images/laptop.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- second page -->
+    <div class="categories">
+        <div class="row">
+            <div class="small-container">
+                <div class="col3"><img src="Images/lap.png" alt=""></div>
+                <div class="col3"><img src="Images/mouse.png"></div>
+                <div class="col3"><img src="Images/keyboard.gif"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- third page products -->
+    <div class="mini-container">
+        <h2 class="title1">Featured Products</h2>
+        <div class="row">
+            <div class="col4">
+                <a href="ASUS TUF Gaming F15.html"><img src="Images/ASUS TUF.png"></a>
+                <h4>ASUS TUF Gaming F15</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p> 51,450 LE </p>
+            </div>
+            <div class="col4">
+                <a href="Dell g15 5530.html"><img src="Images/Dell G15 5530.png"></a>
+                <h4>Dell G15 5530</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p> 55,999 LE </p>
+            </div>
+            <div class="col4">
+                <a href="Lenovo Legion 7.html"><img src="Images/Lenovo Legion 7.png"></a>
+                <h4>Lenovo Legion 7 16ITHg6</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p> 51,899 LE </p>
+            </div>
+        </div>
+        <h2 class="title1">Lastest Products</h2>
+        <div class="row">
+            <div class="col4">
+                <a href="HP Victus 16-R0044NE.html"><img src="Images/HP Victus 16.png"></a>
+                <h4>HP Victus 16-R0044NE</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p> 57,499 LE </p>
+            </div>
+            <div class="col4">
+                <a href="Dell g15 5520.html"><img src="Images/dell g15 5520.png"></a>
+                <h4>Dell G15-5520 Laptop</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p> 48,499 LE </p>
+            </div>
+            <div class="col4">
+                <a href="ROG Strix SCAR 18.html"><img src="Images/ROG Strix SCAR 18.png" style="margin-bottom:42px;"></a>
+                <h4>ROG Strix SCAR 18</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p> 119,999 LE </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Offer page four -->
+    <div class="offer">
+        <div class="mini-container">
+            <div class="row">
+                <div class="col5">
+                    <img src="Images/mi smart band 5.png">
+                </div>
+                <div class="col5">
+                    <p><b>Exclusively Available on TechStore</b></p><br>
+                    <h1>Smart Band 5</h1><br>
+                    <smaal><b>Mi Smart Band 5 Fitness Band, 1.1" (2.8 cm) AMOLED Color Display, Magnetic Charging, 2 Weeks Battery Life, Personal Activity<br> Intelligence (PAI)</b></small><br>  
+                    <a href="Smart Band 5.html" class="btn"> Explore </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- about team -->
+    <div class="team" id="about">
+        <div class="about-container">
+            <div class="rowabout">
+                <div class="col8">
+                    <i class="fa fa-quote-left"></i><br>
+                    <img src="Images/bob.jpg">
+                    <h3> Youssef Abdelmageed </h3>
+                    <hr style="margin-top: 10px;">
+                    <p> A CS student in college, showcasing proficiency in various programming languages such as C++, Java, Python, HTML, CSS and JavaScript.
+                        <br> Beyond academic pursuits, I engage in website projects, demonstrating my practical application of coding skills </p>
+                </div>
+                <div class="col8">
+                    <i class="fa fa-quote-left"></i><br>
+                    <img src="Images/youssefabdo.jpeg">
+                    <h3> Youssef Abdallh </h3>
+                    <hr style="margin-top: 10px;">
+                    <p>Passionate about programming, I excel in diverse languages such as C++ and Python. With a keen interest in gaming development, I leverage the versatility of C++ to tackle challenges and create immersive experiences.<br> My programming journey spans various domains, reflecting my adaptability and enthusiasm for exploring different facets of development.</p>
+                </div>
+                <div class="col8">
+                    <i class="fa fa-quote-left"></i><br>
+                    <img src="Images/youssefmo.jpg">
+                    <h3> Youssef Mohammed </h3>
+                    <hr style="margin-top: 10px;">
+                    <p>I am Yousef from Giza, 20 YO A CS student in Culture and Science City. <br>I graduated from ALX (Back-End) Skills: HTML, CSS, JS, C++, PYTHON, JAVA, SQL, GIT GITHUB, .NET</p>
+                </div>
+                <div class="col8">
+                    <i class="fa fa-quote-left"></i><br>
+                    <img src="Images/unknown.jpg">
+                    <h3> Youssef Sherif </h3>
+                    <hr style="margin-top: 10px;">
+                    <p>I am Youssef. I am a student and my specialty is information systems. <br>I studied many programming languages such as:C++ , HTML , CSS , JAVA SCRIPT.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Brand fifth page -->
+    <div class="brands">
+        <div class="logo-container">
+            <div class="row">
+                <div class="col6">
+                    <img src="Images/Asus logo.png">
+                </div>
+                <div class="col6">
+                    <img src="Images/Aula logo.png">
+                </div>
+                <div class="col6">
+                    <img src="Images/Dell logo.png">
+                </div>
+                <div class="col6">
+                    <img src="Images/HP logo.png">
+                </div>
+                <div class="col6">
+                    <img src="Images/Lenovo logo.png">
+                </div>
+                <div class="col6">
+                    <img src="Images/Logitech logo.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer page-->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3><b>Download our App</b></h3>
+                    <p><b>Download App for Android and Ios moblie phone</b></p>
+                    <div class="app-logo">
+                        <a href="comingsoon.html"> <img src="Images/play-store.png"> </a>
+                        <a href="comingsoon.html"> <img src="Images/app-store.png">  </a>
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <a href="#header"><img src="Images/techstore logo.png" width="150px"></a>
+                    <p><b>We are committed to achieving worldwide accessibility for our products, aiming to reach customers across the world</b></p>
+                </div>
+                <div class="footer-col-3">
+                    <h3><b>Useful Links</b></h3>
+                    <ul>
+                        <li><a href="comingsoon.html"><b>Coupons</b></a></li>
+                        <li><a href="comingsoon.html"><b>Blog Post</b></a></li>
+                        <li><a href="comingsoon.html"><b>Return Policy</b></a></li>
+                        <li><a href="comingsoon.html"><b>Join Affiliate</b></a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3><b>Follow Us</b></h3>
+                    <ul>
+                        <li><a href="comingsoon.html"> <b> Youtube </b> <i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="comingsoon.html"> <b> Facebook </b> <i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="comingsoon.html"> <b> X-Twitter </b> <i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="comingsoon.html"> <b> Instagram </b> <i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright"> Copyright 2023 <i class="fa-regular fa-copyright"></i> </p>
+        </div>
+    </div>
+
+    <!-- Js for toggle menu-->
+    <script>
+        var menuitems = document.getElementById("menuitems");
+
+        menuitems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(menuitems.style.maxHeight == "0px")
+                {
+                    menuitems.style.maxHeight ="200px";
+                }
+            else
+                {
+                    menuitems.style.maxHeight = "0px";
+                }
+        }
+    </script>
+</body>
+</html>
