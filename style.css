@@ -22,7 +22,7 @@ body{
 
 nav{
     flex: 1;
-   text-align: right; 
+    text-align: right; 
 }
 
 nav ul{
@@ -549,13 +549,16 @@ form a{
 }
 
 .col8{
+    
     min-width: 300px;
     margin-right: 20px;
 }
 
 .team{
     padding-top: 100px;
-    margin-left: 115px;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .team .col8{
